@@ -1,8 +1,29 @@
 # practice
 
+# github
+
+**clone**
+git clone https://github.com/arpan8/practice.git
+
+**To push code in github**
+git add .
+git status
+git commit -m "your message"
+git push origin <branch_name> (in my case it is main)
+
+**To pull code in github**
+git add .
+git status
+git commit -m "your message"
+git pull origin <branch_name> (in my case it is main)
+
+# vscode
+
 Open vscode by right clicking and open with vs code
 
 In vscode open terminal using ctrl+`
+
+# node
 
 To create a node js project (using express) first you need to write (in terminal) 
 
