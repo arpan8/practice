@@ -15,8 +15,10 @@ const port = process.env.PORT || 3002;
 
 /**The app.use() function is used to mount the specified middleware function(s) at the path which is being specified. It is mostly used to set up middleware for your application. */
 app.use(morgan('dev'));
+
 /**The express.json() function is a built-in middleware function in Express. It parses incoming requests with JSON payloads and is based on body-parser.  */
 app.use(express.json());
+
 /**The express.urlencoded() function is a built-in middleware function in Express. It parses incoming requests with URL-encoded payloads and is based on a body parser. */
 app.use(express.urlencoded({extended: true}));
 
