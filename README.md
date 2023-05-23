@@ -47,4 +47,18 @@ Now you have to install some packages like **express, mysql2, sequelize, morgan*
 **REMEMBER TO ADD .gitignore file and in that file add node_modules/ and .env**
 node_module folder don't need to sent in github it is a big file after cloning the repo you can write **npm install** in terminal. It will autometically install the packages with node_modules. The packages mentioned in package.json file under dependencies object will only install.
 
+Now create the app.js **(because during the entry point I gave the name app.js, it can be any name you want by default it's index.js)** file
+Install the dotenv package to keep secrct in .env file and access the property from the **proccess.env**
+**npm i dotenv**
+create a file named **.env** and add the file name in .gitignore(it is secrct keeping file)
 
+In .env first write **PORT=3000** for defining the port of your server.
+
+After writing the basic server setup you can write **node app** it will start the server.
+
+You can also use nodemon, you can install the nodemon globally by writing **npm i -g nodemon** in terminal or you can install the nodemon in devdependencies by writing **npm i -d nodemon**(devdependencies object you can find in package.json).
+Then you can write **nodemon app.js** it will start the server.
+
+You can also add property under **scripts** object in package.json.
+check the package.json there I wrote **dev** property with value **nodemon app.js**.
+So now I can write **npm run dev** in terminal and it will start the server.
